@@ -1,0 +1,33 @@
+{
+  "name": "htt-www",
+  "version": "1.0.0",
+  "description": "Hometown Tickets Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ralph Holzmann",
+  "license": "ISC",
+  "dependencies": {
+    "almond": "^0.3.0",
+    "broccoli": "^0.13.3",
+    "broccoli-babel-transpiler": "^4.0.0",
+    "broccoli-cjs-wrap": "0.0.6",
+    "broccoli-concat": "0.0.12",
+    "broccoli-es6-module-filter": "^0.1.9",
+    "broccoli-merge-trees": "^0.2.1",
+    "broccoli-static-compiler": "^0.2.1",
+    "express": "^4.12.0",
+    "grunt": "^0.4.5",
+    "grunt-broccoli": "^0.4.0",
+    "grunt-nodemon": "^0.4.0",
+    "react": "^0.12.2",
+    "react-router": "^0.12.0",
+    "serve-favicon": "^2.2.0"
+  },
+  "devDependencies": {
+    "broccoli-browserify": "^0.1.0",
+    "grunt-concurrent": "^1.0.0",
+    "load-grunt-tasks": "^3.1.0"
+  }
+}
