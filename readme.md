@@ -8,6 +8,11 @@ npm install -g grunt
 grunt
 ```
 
+## Todo
+
+* Make the nodemon server only restart after a Broccoli build completes
+* Testing boilerplate
+
 ## Built with these awesome projects
 
 * [React](https://facebook.github.io/react/)
@@ -18,11 +23,6 @@ grunt
 * [Express](http://expressjs.com/)
 * [Grunt](http://gruntjs.com/)
 * [Nodemon](http://nodemon.io/)
-
-## Todo
-
-* Make the nodemon server only restart after a Broccoli build completes
-* Testing boilerplate
 
 ## License
 
