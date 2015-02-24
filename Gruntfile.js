@@ -4,11 +4,10 @@ module.exports = function (grunt) {
   // Define the configuration for all the tasks
   grunt.initConfig({
     concurrent: {
-      dev: {
-        tasks: ['broccoli:development:watch', 'nodemon:development'],
-        options: {
-          logConcurrentOutput: true
-        }
+      init: ['broccoli:development:build'],
+      dev: ['broccoli:development:watch', 'nodemon:development'],
+      options: {
+        logConcurrentOutput: true
       }
     },
     broccoli: {
@@ -33,9 +32,7 @@ module.exports = function (grunt) {
       environment = "development";
     }
 
-    grunt.task.run([
-      'concurrent'
-    ]);
+    grunt.task.run(['concurrent:init', 'concurrent:dev']);
   });
 
   grunt.registerTask('default', [
