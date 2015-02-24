@@ -36,6 +36,7 @@ browserify’s `process.browser` flag.
 
 ## Todo
 * Make the nodemon server only restart after a Broccoli build completes
+* Data layer
 * Testing boilerplate
 
 ## Built with these awesome projects
