@@ -1,7 +1,7 @@
 # [React Isomorphic Boilerplate](https://github.com/ralphholzmann/iso-react-broccoli-boilerplate)
 
 A boilerplate for a React app that renders on the server and automatically
-rehydrates on the client.
+rehydrates on the client. Includes title and meta description support for SEO.
 
 ## Getting started
 ```sh
@@ -10,7 +10,7 @@ npm install -g grunt
 grunt
 ```
 
-### Title and Meta support
+#### Title and Meta support
 To get your app to render dynamic title and meta tags for SEO, set the `title`
 and `meta` static properties on your [route handler](https://github.com/ralphholzmann/iso-react-broccoli-boilerplate/blob/master/src/app/handlers/index.js#L6-L11).
 
@@ -27,6 +27,12 @@ var Index = React.createClass({
 
 });
 ```
+
+#### Server vs client rendering
+You can [fine tune](https://github.com/ralphholzmann/iso-react-broccoli-boilerplate/blob/master/src/app/handlers/index.js#L16) what renders on the server and the client by leveraging
+browserify’s `process.browser` flag. 
+
+![Demo](http://i.ralph.io/sb479b34.png)
 
 ## Todo
 * Make the nodemon server only restart after a Broccoli build completes
