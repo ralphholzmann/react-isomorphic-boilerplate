@@ -10,7 +10,6 @@ var Title = React.createClass({
     var titleParts = this.getRoutes().map(function(route) {
       return route.handler.title || "";
     }).filter(Boolean);
-    titleParts.unshift("Hometown Tickets");
 
     return {
       title: titleParts.join(" | ")
