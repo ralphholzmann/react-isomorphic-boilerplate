@@ -1,9 +1,6 @@
 var esTranspiler = require('broccoli-babel-transpiler');
 var pickFiles = require('broccoli-static-compiler');
-var concat = require('broccoli-concat');
 var mergeTrees = require('broccoli-merge-trees');
-var filterES6Modules = require('broccoli-es6-module-filter');
-var cjsWrap = require("broccoli-cjs-wrap");
 var browserify = require('broccoli-browserify');
 
 var serverTree = pickFiles("src", {

@@ -23,7 +23,7 @@ module.exports = function (grunt) {
     nodemon: {
       development: {
         script: 'build/server.js',
-        watch: ["build"]
+        watch: ["build/server.js"]
       }
     }
   });
